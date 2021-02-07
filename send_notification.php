@@ -3,11 +3,12 @@ function sendNotification(){
     $url ="https://fcm.googleapis.com/fcm/send";
 
     $fields=array(
-        "to"=>$_REQUEST['token'],
+        // "to"=>$_REQUEST['token'],
+        "to"=>"flWughnurFpeUp93NLok40:APA91bGPIYV7cHjk5yJWl7RJaPBF95fZINXN0u3_YFYbvvUcM4iT_oLj0NjfAzpXbrdNuhI_z4krgOb4vI-qsaKjwyH85HXuQEGPNn3cTkHVKPXrhtfOYFj0CdLk7ZgCiwvCwOqRl2wd",
         "notification"=>array(
-            "body"=>$_REQUEST['message'],
-            "title"=>$_REQUEST['title'],
-            "icon"=>$_REQUEST['icon'],
+            "body"=>"New inquiry transfer to you",
+            "title"=>"New inquiry added",
+            "icon"=> "https://homepages.cae.wisc.edu/~ece533/images/airplane.png",
             "click_action"=>"https://google.com"
         )
     );
